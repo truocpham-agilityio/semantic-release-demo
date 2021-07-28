@@ -1,0 +1,18 @@
+{
+  "name": "semantic-release-demo",
+  "version": "1.0.0",
+  "description": "Using semantic-release with GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-agilityio:truocpham-agilityio/semantic-release-demo.git"
+  },
+  "author": "Truoc Pham",
+  "license": "ISC",
+  "dependencies": {
+    "semantic-release": "^17.4.4"
+  }
+}
