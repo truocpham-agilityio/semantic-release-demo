@@ -6,13 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com-agilityio:truocpham-agilityio/semantic-release-demo.git"
-  },
+  "repository": "https://github.com/truocpham-agilityio/semantic-release-demo.git",
   "author": "Truoc Pham",
   "license": "ISC",
   "dependencies": {
     "semantic-release": "^17.4.4"
+  },
+  "release": {
+    "branches": ["main"],
+    "plugins": [
+      ["@semantic-release/npm", {
+        "npmPublish": false
+      }]
+    ]
   }
 }
