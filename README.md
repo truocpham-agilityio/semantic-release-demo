@@ -5,7 +5,7 @@
 - [ ] Only allow squash merging of pull requests
 - [ ] Install https://github.com/apps/semantic-pull-requests
 - [ ] Add release workflow file to `.github/workflows/release.yml`
-- [ ] `npm i -D semantic-release`
+- [ ] `npm i semantic-release`
 - [ ] Use semantic commit messages
 - [ ] Create a pull request
 
@@ -30,6 +30,7 @@ jobs:
           node-version: "12.x"
       - run: npm ci
       - run: npm run build --if-present
-      - run: npm test
       - run: npx semantic-release
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 ```
