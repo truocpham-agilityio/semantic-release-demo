@@ -9,15 +9,8 @@
   "repository": "https://github.com/truocpham-agilityio/semantic-release-demo.git",
   "author": "Truoc Pham",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "semantic-release": "^17.4.4"
-  },
-  "release": {
-    "branches": ["main"],
-    "plugins": [
-      ["@semantic-release/npm", {
-        "npmPublish": false
-      }]
-    ]
   }
 }
