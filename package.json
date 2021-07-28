@@ -13,6 +13,11 @@
     "semantic-release": "^17.4.4"
   },
   "release": {
-    "branches": ["main"]
+    "branches": ["main"],
+    "plugins": [
+      ["@semantic-release/npm", {
+        "npmPublish": false
+      }]
+    ]
   }
 }
